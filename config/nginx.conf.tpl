@@ -1,7 +1,6 @@
-
 server {
   server_name ${API_EXTERNAL_HOST};
-  listen ${API_EXTERNAL_PORT};
+  listen ${API_EXTERNAL_PORT} ssl http2;
 
   ssl on;
   ssl_certificate ${API_CERTIFICATE};
@@ -22,7 +21,7 @@ server {
 
 server {
   server_name ${DEPOT_EXTERNAL_HOST};
-  listen ${DEPOT_EXTERNAL_PORT};
+  listen ${DEPOT_EXTERNAL_PORT} ssl http2;
 
   ssl on;
   ssl_certificate ${DEPOT_CERTIFICATE};
