@@ -1,11 +1,30 @@
 {
   "name": "wolkenkit-proxy",
-  "description": "",
-  "version": "0.0.0",
+  "version": "3.0.0",
+  "description": "wolkenkit-proxy is a reverse proxy for wolkenkit.",
+  "contributors": [
+    {
+      "name": "Jan-Hendrik Grundhöfer",
+      "email": "jan-hendrik.grundhoefer@thenativeweb.io"
+    },
+    {
+      "name": "Golo Roden",
+      "email": "golo.roden@thenativeweb.io"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "roboter": "3.0.3"
+  },
   "scripts": {
     "build": "docker build -t thenativeweb/wolkenkit-proxy ."
   },
-  "devDependencies": {
-    "roboter": "3.0.3"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thenativeweb/wolkenkit-proxy.git"
+  },
+  "keywords": [
+    "wolkenkit"
+  ],
+  "license": "AGPL-3.0"
 }
