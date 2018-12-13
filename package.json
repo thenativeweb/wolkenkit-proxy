@@ -1,0 +1,11 @@
+{
+  "name": "wolkenkit-proxy",
+  "description": "",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "docker build -t thenativeweb/wolkenkit-proxy ."
+  },
+  "devDependencies": {
+    "roboter": "3.0.3"
+  }
+}
