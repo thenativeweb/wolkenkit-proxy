@@ -8,3 +8,5 @@ CMD envsubst '$API_EXTERNAL_HOST $API_EXTERNAL_PORT $API_CERTIFICATE $API_PRIVAT
     /tpl/nginx.conf.tpl > \
     /etc/nginx/conf.d/default.conf && \
     exec nginx -g 'daemon off;'
+
+ONBUILD ADD . /wolkenkit/app/
