@@ -52,5 +52,24 @@ server {
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_set_header X-Forwarded-Host $server_name;
+
+    proxy_set_header X-Forwarded-Port ${DEPOT_EXTERNAL_PORT};
+    proxy_set_header X-Forwarded-Proto https;
+    proxy_set_header X-Original-URI $request_uri;
+    proxy_set_header X-Scheme https;
+    proxy_set_header X-Original-Forwarded-For $http_x_forwarded_for;
+
+    proxy_set_header Proxy "";
+
+    proxy_connect_timeout 5s;
+    proxy_send_timeout 3600s;
+    proxy_read_timeout 3600s;
+
+    proxy_buffering "off";
+    proxy_buffer_size "16k";
+    proxy_buffers 4 "16k";
+    proxy_request_buffering "on";
+
+    proxy_http_version 1.1;
   }
 }
