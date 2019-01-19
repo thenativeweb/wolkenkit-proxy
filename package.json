@@ -1,6 +1,6 @@
 {
   "name": "wolkenkit-proxy",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "wolkenkit-proxy is a reverse proxy for wolkenkit.",
   "contributors": [
     {
